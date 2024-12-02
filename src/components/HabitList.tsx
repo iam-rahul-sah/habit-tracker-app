@@ -7,7 +7,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import { Habit, removeHabit, toggleHabit } from "../store/habbit.slice";
 
 const HabitList: React.FC = () => {
-  const habits = useSelector((state: RootState) => state.habits.habits);
+  const habits = useSelector((state: RootState) => state.persistedReducer.habits);
   const dispatch = useDispatch<AppDispatch>();
   const today = new Date().toISOString().split("T")[0];
 

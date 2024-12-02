@@ -1,6 +1,6 @@
 import "./App.css";
 import { Provider } from "react-redux";
-import store from "./store/store"
+import {store} from "./store/store"
 import { Container, Typography } from "@mui/material";
 import AddHabitForm from "./components/AddHabitForm";
 import HabitList from "./components/HabitList";
